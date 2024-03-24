@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Test Form</title>
+<link rel="stylesheet" href="formstyle.css">
+
+</head>
+<body style="background-color: rgb(227, 218, 207);">
+
+    <!-- Details collecting for lab test-->
+    <div class="container">
+        <div class="form-container">
+    
+            <h2>1.Your Contact Details</h2>
+
+            <!-- Form starts here -->
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text"  name="fullName" placeholder="Full Name">
+                    <input type="text"  name="patientId" placeholder="Patient ID (if applicable)">
+                </div>
+                <div class="form-group">
+                    <input type="text"  name="contactNumber" placeholder="Contact Number">
+                    <input type="email"  name="email" placeholder="Email ID">
+                </div>
+            
+
+                <h2>2.Address</h2>
+                <div class="form-group">
+                    <input type="text"  name="houseNumber" placeholder="H-No">
+                    <input type="text" name="street" placeholder="Street">
+                </div>
+               
+                <div class="form-group">
+                    <input type="text"  name="area" placeholder="Area">
+                </div>
+
+                <h3>District</h3>
+                <div class="form-group">
+                    <select  name="district" required>
+                        <option value="chosen" selected>District</option>
+                        <option value="district1">Karaikal</option>
+                        <option value="district2">Thiruvarur</option>
+                        <option value="district3">Thirunallar</option>
+            
+                    </select>
+                </div>
+
+
+                <h2>3.Choose the Test Type</h2>
+
+                <div class="form-group">
+                    <p class="message">(Check at least one box without fail)</p>
+                </div>
+                <div class="form-group">
+                    <label >CBC</label>
+                    <input type="checkbox"  name="testType" value="CBC">
+                    
+                </div>
+                <div class="form-group">
+                    <label >Complete Urine</label>
+                    <input type="checkbox"  name="testType" value="Complete Urine">
+                    
+                </div>
+                <div class="form-group">
+                    <label >Lipid Profile</label>
+                    <input type="checkbox"  name="testType" value="Lipid Profile">
+                    
+                </div>
+                <div class="form-group">
+                    <label >Thyroid Stimulating Hormone (TSH)</label>
+                    <input type="checkbox"  name="testType" value="Thyroid Stimulating Hormone (TSH)">
+                   
+                </div>
+                <div class="form-group">
+                    <label >Glucose Test</label>
+                    <input type="checkbox"  name="testType" value="Glucose Test">
+                  
+                </div>
+               
+                <h2>4.Do you want a hard copy of the report also?</h2>
+                <div class="form-group">
+                    <label >Yes</label>
+                    <input type="radio"  name="hardCopy" value="Yes">
+                   
+                </div>
+                <div class="form-group">
+                    <label >No</label>
+                    <input type="radio"  name="hardCopy" value="No" checked>
+                    
+                </div>
+                <h2>5.Select Your Comfortable Date and Time</h2>
+                <div class="form-group">
+                    <label >Date:</label>
+                    <input type="date"  name="date" required>
+                </div>
+                <div class="form-group">
+                    <label >Time:</label>
+                    <input type="time"  name="time" required>
+                </div>
+                <div class="form-group">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+        <div class="fixed-image">
+            <img src="image/lab-test.jpg" alt="Image">
+        </div>
+    </div>
+</body>
+</html>
